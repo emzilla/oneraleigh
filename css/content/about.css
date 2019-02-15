@@ -1,0 +1,73 @@
+/* About 
+--------------------- */
+
+.about {
+    padding: 60px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    grid-row-gap: 50px;
+    overflow: hidden;
+    position: relative;
+
+    @media (--viewport-med) {
+        grid-template-columns: 350px 1fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 50px;
+        grid-row-gap: 0;
+        padding: 150px;
+    }
+
+    @media (--viewport-lg) {
+        padding: 300px 160px;
+        grid-column-gap: 170px;
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        background-image: url('../../img/grid.svg');
+        left: 200px;
+        top: 390px;
+        width: 1551px;
+        height: 1100px;
+        opacity: 0.3;
+    }
+}
+
+.about__title {
+    font-family: var(--strongFontFamily);
+    font-size: 49px;
+    hyphens: auto;
+    text-transform: uppercase;
+    word-wrap: break-word;
+
+    @media (--viewport-med) {
+        font-size: 79px;
+    }
+}
+
+.about__content {
+    font-size: 18px;
+
+    blockquote {
+        font-family: var(--emphasizedFontFamily);
+    }
+    
+    blockquote, p  {
+        margin-bottom: 20px;
+    }
+}
+
+.about__heading {
+    font-family: var(--strongFontFamily);
+    font-size: 22px;
+    line-height: 1.3;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+
+    &:not(:first-child) {
+        margin-top: 30px;
+    }
+}

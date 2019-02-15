@@ -1,0 +1,28 @@
+/* Footer 
+--------------------- */
+
+.footer {
+    background-color: var(--orBlack);
+    padding: 20px;
+    text-align: center;
+    height: 600px;
+
+    @media (--viewport-med) {
+        padding: 50px 0;
+    }
+
+    @media (--viewport-lg) {
+        padding: 60px 0 70px;
+    }
+
+    p {
+        color: var(--orWhite);
+    }
+}
+
+.footer__content {
+    font-family: var(--strongFontFamily);
+    font-size: 52px;
+    text-transform: uppercase;
+    margin-bottom: 500px;
+}

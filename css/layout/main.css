@@ -1,0 +1,13 @@
+/* Main
+--------------------- */
+
+.site-main {
+    background-color: var(--orWhite);
+    margin-bottom: 435px;
+    position: relative;
+    z-index: 1;
+
+    @media (--viewport-med) {
+        margin-bottom: 450px;  
+    }
+}

@@ -1,0 +1,69 @@
+/* Easter Egg 
+--------------------- */
+
+.easter-egg {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 480px;
+    width: 100%;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(231deg, #ea3e17, #eaa517, #eadc17, #17ea32, #17b0ea, #8217ea);
+    background-size: 1200% 1200%;
+    animation: gradientCycle 15s ease infinite;
+}
+
+.easter-egg__link {
+    text-align: center;
+    width: 100%;
+
+    p {
+        text-transform: uppercase;
+    }
+}
+
+.easter-egg__glitch {
+    margin-top: 50px;
+    position: relative;
+
+    &-link {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 431px;
+    }
+
+    a {
+        font-family: var(--strongFontFamily);
+        font-size: 52px;
+        margin: 0;
+        line-height: 0;
+        text-decoration: none;
+        text-transform: uppercase;
+        position: absolute;
+        color: var(--orBlack);
+        top: 0;
+        left: 0;
+
+        &:hover {
+            animation: glitch1 2.5s infinite;
+        }
+
+        &:nth-child(2):hover {
+            color: #42f4b3;
+            animation: glitch2 2.5s infinite;
+        }
+
+        &:nth-child(3):hover {
+            color: #c525ed;
+            animation: glitch3 2.5s infinite;
+        }
+
+    }
+}

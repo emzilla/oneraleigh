@@ -1,0 +1,20 @@
+/* Settings 
+--------------------- */
+
+/* Media Queries */
+
+/* Custom Properties */
+
+:root {
+    /* Typography */
+    --strongFontFamily: 'TideSans-700Mondo', sans-serif;
+    --bodyFontFamily: 'TideSans-200LilMondo', sans-serif;
+    --emphasizedFontFamily: 'TideSans-200LilMondoItalic', sans-serif;
+
+    /* Colors */
+    --orBlack: #181717;
+    --orGray: #D7D1D1;
+    --orWhite: #fff;
+    --orAccent: #1d94af;
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImdlbmVyYWwvc2V0dGluZ3MuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO3VCQUN1Qjs7QUFFdkIsa0JBQWtCOztBQVFsQixzQkFBc0I7O0FBRXRCO0lBQ0ksZUFBZTtJQUNmLG1EQUFtRDtJQUNuRCxvREFBb0Q7SUFDcEQsZ0VBQWdFOztJQUVoRSxXQUFXO0lBQ1gsa0JBQWtCO0lBQ2xCLGlCQUFpQjtJQUNqQixlQUFlO0lBQ2YsbUJBQW1CO0FBQ3ZCIiwiZmlsZSI6ImdlbmVyYWwvc2V0dGluZ3MuY3NzIn0= */

@@ -1,0 +1,26 @@
+/* Contact 
+--------------------- */
+
+.contact {
+    padding: 20px;
+
+    @media (--viewport-med) {
+        padding: 0 150px 150px;
+    }
+
+    @media (--viewport-lg) {
+        padding: 0 300px 160px;
+    }
+}
+
+.contact__form {
+    max-width: 480px;
+    height: 688px;
+    padding-left: 75px;
+}
+
+.contact__title {
+    font-family: var(--strongFontFamily);
+    font-size: 72px;
+    text-transform: uppercase;
+}

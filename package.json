@@ -1,0 +1,40 @@
+{
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/register": "^7.0.0",
+    "autoprefixer": "^9.4.7",
+    "babel": "^6.23.0",
+    "beepbeep": "^1.2.2",
+    "browser-sync": "^2.26.3",
+    "cssnano": "^4.1.8",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-livereload": "^4.0.1",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-remember": "^1.0.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.1",
+    "gulp-util": "^3.0.8",
+    "rename": "^1.0.4"
+  },
+  "dependencies": {
+    "postcss-apply": "^0.11.0",
+    "postcss-each": "^0.10.0",
+    "postcss-for": "^2.1.1",
+    "postcss-import": "^12.0.1",
+    "postcss-inline-svg": "^3.1.1",
+    "postcss-nested": "^4.1.1",
+    "postcss-preset-env": "^6.5.0",
+    "postcss-utilities": "^0.8.0",
+    "prettier": "^1.16.1",
+    "requirejs": "^2.3.6",
+    "stylelint": "^9.10.1"
+  }
+}

@@ -1,0 +1,39 @@
+/* Footer 
+--------------------- */
+
+.footer {
+    background-color: #181717;
+    background-color: var(--orBlack);
+    padding: 20px;
+    text-align: center;
+    height: 600px;
+}
+
+@media (min-width: 801px) {
+
+.footer {
+        padding: 50px 0
+}
+    }
+
+@media (min-width: 1201px) {
+
+.footer {
+        padding: 60px 0 70px
+}
+    }
+
+.footer p {
+        color: #fff;
+        color: var(--orWhite);
+    }
+
+.footer__content {
+    font-family: 'TideSans-700Mondo', sans-serif;
+    font-family: var(--strongFontFamily);
+    font-size: 52px;
+    text-transform: uppercase;
+    margin-bottom: 500px;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbnRlbnQvZm9vdGVyLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTt1QkFDdUI7O0FBRXZCO0lBQ0kseUJBQWdDO0lBQWhDLGdDQUFnQztJQUNoQyxhQUFhO0lBQ2Isa0JBQWtCO0lBQ2xCLGFBQWE7QUFhakI7O0FBWEk7O0FBTko7UUFPUTtBQVVSO0lBVEk7O0FBRUE7O0FBVko7UUFXUTtBQU1SO0lBTEk7O0FBRUE7UUFDSSxXQUFxQjtRQUFyQixxQkFBcUI7SUFDekI7O0FBR0o7SUFDSSw0Q0FBb0M7SUFBcEMsb0NBQW9DO0lBQ3BDLGVBQWU7SUFDZix5QkFBeUI7SUFDekIsb0JBQW9CO0FBQ3hCIiwiZmlsZSI6ImNvbnRlbnQvZm9vdGVyLmNzcyJ9 */

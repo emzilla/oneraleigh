@@ -1,0 +1,16 @@
+/* Typography 
+--------------------- */
+
+@font-face {font-family: 'TideSans-200LilMondo';src: url('webfonts/38BEBB_0_0.eot');src: url('webfonts/38BEBB_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/38BEBB_0_0.woff2') format('woff2'),url('webfonts/38BEBB_0_0.woff') format('woff'),url('webfonts/38BEBB_0_0.ttf') format('truetype');}
+
+@font-face {font-family: 'TideSans-200LilMondoItalic';src: url('webfonts/38BEBB_1_0.eot');src: url('webfonts/38BEBB_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/38BEBB_1_0.woff2') format('woff2'),url('webfonts/38BEBB_1_0.woff') format('woff'),url('webfonts/38BEBB_1_0.ttf') format('truetype');}
+
+@font-face {font-family: 'TideSans-700Mondo';src: url('webfonts/38BEBB_2_0.eot');src: url('webfonts/38BEBB_2_0.eot?#iefix') format('embedded-opentype'),url('webfonts/38BEBB_2_0.woff2') format('woff2'),url('webfonts/38BEBB_2_0.woff') format('woff'),url('webfonts/38BEBB_2_0.ttf') format('truetype');}
+
+@font-face {font-family: 'TideSans-700MondoItalic';src: url('webfonts/38BEBB_3_0.eot');src: url('webfonts/38BEBB_3_0.eot?#iefix') format('embedded-opentype'),url('webfonts/38BEBB_3_0.woff2') format('woff2'),url('webfonts/38BEBB_3_0.woff') format('woff'),url('webfonts/38BEBB_3_0.ttf') format('truetype');}
+
+strong {
+    font-family: 'TideSans-700Mondo', sans-serif;
+    font-family: var(--strongFontFamily);
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImdlbmVyYWwvdHlwb2dyYXBoeS5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7dUJBQ3VCOztBQUV2QixZQUFZLG1DQUFtQyxDQUFDLG1DQUFtQyxDQUFDLHdOQUF3TixDQUFDOztBQUc3UyxZQUFZLHlDQUF5QyxDQUFDLG1DQUFtQyxDQUFDLHdOQUF3TixDQUFDOztBQUduVCxZQUFZLGdDQUFnQyxDQUFDLG1DQUFtQyxDQUFDLHdOQUF3TixDQUFDOztBQUcxUyxZQUFZLHNDQUFzQyxDQUFDLG1DQUFtQyxDQUFDLHdOQUF3TixDQUFDOztBQUdoVDtJQUNJLDRDQUFvQztJQUFwQyxvQ0FBb0M7QUFDeEMiLCJmaWxlIjoiZ2VuZXJhbC90eXBvZ3JhcGh5LmNzcyJ9 */

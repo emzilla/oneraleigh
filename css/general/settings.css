@@ -1,0 +1,25 @@
+/* Settings 
+--------------------- */
+
+/* Media Queries */
+
+@custom-media --viewport-sm (width > 400px);
+@custom-media --viewport-med (width > 800px);
+@custom-media --viewport-lg (width > 1200px);
+@custom-media --viewport-xl (width > 1440px);
+
+
+/* Custom Properties */
+
+:root {
+    /* Typography */
+    --strongFontFamily: 'TideSans-700Mondo', sans-serif;
+    --bodyFontFamily: 'TideSans-200LilMondo', sans-serif;
+    --emphasizedFontFamily: 'TideSans-200LilMondoItalic', sans-serif;
+
+    /* Colors */
+    --orBlack: #181717;
+    --orGray: #D7D1D1;
+    --orWhite: #fff;
+    --orAccent: #1d94af;
+}

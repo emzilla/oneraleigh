@@ -1,0 +1,18 @@
+/* Typography 
+--------------------- */
+
+@font-face {font-family: 'TideSans-200LilMondo';src: url('webfonts/38BEBB_0_0.eot');src: url('webfonts/38BEBB_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/38BEBB_0_0.woff2') format('woff2'),url('webfonts/38BEBB_0_0.woff') format('woff'),url('webfonts/38BEBB_0_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'TideSans-200LilMondoItalic';src: url('webfonts/38BEBB_1_0.eot');src: url('webfonts/38BEBB_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/38BEBB_1_0.woff2') format('woff2'),url('webfonts/38BEBB_1_0.woff') format('woff'),url('webfonts/38BEBB_1_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'TideSans-700Mondo';src: url('webfonts/38BEBB_2_0.eot');src: url('webfonts/38BEBB_2_0.eot?#iefix') format('embedded-opentype'),url('webfonts/38BEBB_2_0.woff2') format('woff2'),url('webfonts/38BEBB_2_0.woff') format('woff'),url('webfonts/38BEBB_2_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'TideSans-700MondoItalic';src: url('webfonts/38BEBB_3_0.eot');src: url('webfonts/38BEBB_3_0.eot?#iefix') format('embedded-opentype'),url('webfonts/38BEBB_3_0.woff2') format('woff2'),url('webfonts/38BEBB_3_0.woff') format('woff'),url('webfonts/38BEBB_3_0.ttf') format('truetype');}
+
+
+strong {
+    font-family: var(--strongFontFamily);
+}

@@ -1,0 +1,18 @@
+/* Main
+--------------------- */
+
+.site-main {
+    background-color: #fff;
+    background-color: var(--orWhite);
+    margin-bottom: 435px;
+    position: relative;
+    z-index: 1;
+}
+
+@media (min-width: 801px) {
+
+.site-main {
+        margin-bottom: 450px
+}  
+    }
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImxheW91dC9tYWluLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTt1QkFDdUI7O0FBRXZCO0lBQ0ksc0JBQWdDO0lBQWhDLGdDQUFnQztJQUNoQyxvQkFBb0I7SUFDcEIsa0JBQWtCO0lBQ2xCLFVBQVU7QUFLZDs7QUFISTs7QUFOSjtRQU9RO0FBRVI7SUFESSIsImZpbGUiOiJsYXlvdXQvbWFpbi5jc3MifQ== */
