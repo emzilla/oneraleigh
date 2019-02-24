@@ -97,29 +97,11 @@ gulp.task('styles', () => {
         // .pipe( notify({ message: '\n\n✅  ===> STYLES — completed!\n', onLast: true }) );
 });
 
-// TASK: Vendors Scripts
-
-gulp.task('vendors scripts', () => {
-    return gulp
-        .src(paths.vendorScripts.src, {allowEmpty: true})
-        .pipe(plumber(errorHandler))
-        .pipe(babel({
-            presets: [
-                ['@babel/preset-env', {targets: {browsers: autoprefixerBrowsers}}]
-            ]
-        }))
-        .pipe(concat('vendors.js'))
-        // .pipe(uglify())
-        .pipe(gulp.dest(paths.vendorScripts.dest))
-        .pipe(browserSync.stream());
-        // .pipe( notify({ message: '\n\n✅  ===> SCRIPTS — completed!\n', onLast: true }) );
-});
-
 // TASK: Scripts
 
 gulp.task('scripts', () => {
     return gulp
-        .src(paths.scripts.src, {allowEmpty: true})
+        .src([paths.vendorScripts.src, paths.scripts.src], {allowEmpty: true})
         .pipe(plumber(errorHandler))
         .pipe(babel({
             presets: [
@@ -137,9 +119,8 @@ gulp.task('scripts', () => {
 // TASK: default
 gulp.task(
     'default',
-    gulp.parallel('styles', 'vendors scripts', 'scripts', browsersync, () => {
+    gulp.parallel('styles', 'scripts', browsersync, () => {
         gulp.watch(paths.styles.src, gulp.parallel( 'styles', reload ));
-        gulp.watch(paths.vendorScripts.src, gulp.parallel('vendors scripts', reload));
         gulp.watch(paths.scripts.src, gulp.parallel('scripts', reload));
     })
 );

@@ -1,6 +1,12 @@
-console.log('test');
-// import ScrollMagic from 'scrollmagic/scrollmagic/minified/ScrollMagic.min';
-// import 'scrollmagic/scrollmagic/minified/plugins/animation.gsap.min';
-// import 'scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min';
-// import TweenMax from 'gsap/src/minified/TweenMax.min';
-// import TimelineMax from 'gsap/src/minified/TimelineMax.min';
+// ScrollMagic Animations 
+
+const controller = new ScrollMagic.Controller();
+
+var scene = new ScrollMagic.Scene({
+    triggerElement: "#about"
+})
+.setTween("#test-scroll-object", 0.5, {backgroundColor: "green", scale: 2.5}) // trigger a TweenMax.to neonate
+.addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
+.addTo(controller);
+
+console.log(controller);

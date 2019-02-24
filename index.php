@@ -31,6 +31,7 @@ get_header();
 					</div>
 				</header>
 				<section class="about" id="about">
+					<div id="test-scroll-object">MEOW</div>
 					<div class="about__breakout">
 						<h1 class="about__title">Never been slackers always been hungry.</h1>
 					</div>
