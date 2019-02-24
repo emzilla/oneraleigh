@@ -6,6 +6,7 @@
     padding: 20px;
     text-align: center;
     height: 600px;
+    position: relative;
 
     @media (--viewport-med) {
         padding: 50px 0;
@@ -13,6 +14,17 @@
 
     @media (--viewport-lg) {
         padding: 60px 0 70px;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        background-image: url('../../img/end-line.svg');
+        right: 216px;
+        top: -150px;
+        width: 32px;
+        height: 519px;
     }
 
     p {
@@ -24,5 +36,5 @@
     font-family: var(--strongFontFamily);
     font-size: 52px;
     text-transform: uppercase;
-    margin-bottom: 500px;
+    margin-bottom: 420px;
 }

@@ -7,6 +7,7 @@
 @custom-media --viewport-med (width > 800px);
 @custom-media --viewport-lg (width > 1200px);
 @custom-media --viewport-xl (width > 1440px);
+@custom-media --height-xl (height > 650px );
 
 
 /* Custom Properties */

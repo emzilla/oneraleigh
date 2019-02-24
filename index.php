@@ -55,9 +55,7 @@ get_header();
 				<section class="contact" id="contact">
 					<div class="contact__form">
 						<h1 class="contact__title">New Site Who Dis?</h1>
-						<form action="">
-							Form goes here
-						</form>
+						<?php echo do_shortcode('[contact-form-7 id="11" title="Contact form 1"]'); ?>
 					</div>
 					
 				</section>
@@ -68,12 +66,12 @@ get_header();
 		</main><!-- #main -->
 		<div class="easter-egg">
 			<div class="easter-egg__link">
-				<p>Do you want to see</p>
+				<p>Do you want to see <strong>CATS BOUNCE?</strong></p>
 				<div class="easter-egg__glitch">
 					<div class="easter-egg__glitch-link">
-						<a href="https://cat-bounce.com/" target="_blank">Cats Bounce?</a>
-						<a href="https://cat-bounce.com/" target="_blank">Cats Bounce?</a>
-						<a href="https://cat-bounce.com/" target="_blank">Cats Bounce?</a>
+						<a href="https://cat-bounce.com/" target="_blank">Hells Yeah</a>
+						<a href="https://cat-bounce.com/" target="_blank">Hells Yeah</a>
+						<a href="https://cat-bounce.com/" target="_blank">Hells Yeah</a>
 					</div>
 				</div>
 			</div>

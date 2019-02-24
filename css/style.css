@@ -14,6 +14,10 @@
 @import "content/contact.css";
 @import "content/easter-egg.css";
 @import "content/footer.css";
+@import "content/form.css";
 @import "content/header.css";
 @import "content/intro.css";
 @import "content/nav.css";
+
+/* Vendor */
+@import "vendor/contact-form-7.css";

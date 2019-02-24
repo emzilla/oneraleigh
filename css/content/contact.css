@@ -11,16 +11,30 @@
     @media (--viewport-lg) {
         padding: 0 300px 160px;
     }
+
 }
 
 .contact__form {
     max-width: 480px;
     height: 688px;
     padding-left: 75px;
+    position: relative;
+
+    &:after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        background-image: url('../../img/contact-line.svg');
+        right: -40px;
+        top: 30px;
+        width: 22px;
+        height: 485px;
+    }
 }
 
 .contact__title {
     font-family: var(--strongFontFamily);
     font-size: 72px;
     text-transform: uppercase;
+    margin-bottom: 40px;
 }

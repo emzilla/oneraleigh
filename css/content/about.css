@@ -15,12 +15,24 @@
         grid-template-rows: 1fr;
         grid-column-gap: 50px;
         grid-row-gap: 0;
-        padding: 150px;
+        padding: 50px 150px 150px;
     }
 
     @media (--viewport-lg) {
         padding: 300px 160px;
         grid-column-gap: 170px;
+
+        &:before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            background-image: url('../../img/about-line.svg');
+            background-repeat: no-repeat;
+            left: 100px;
+            top: 120px;
+            width: 34px;
+            height: 589px;
+        }
     }
 
     &:after {
@@ -28,12 +40,14 @@
         position: absolute;
         z-index: -1;
         background-image: url('../../img/grid.svg');
+        background-repeat: no-repeat;
         left: 200px;
         top: 390px;
-        width: 1551px;
+        width: 100%;
         height: 1100px;
         opacity: 0.3;
     }
+    
 }
 
 .about__title {

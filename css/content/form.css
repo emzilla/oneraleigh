@@ -1,0 +1,61 @@
+/* Form 
+--------------------- */
+
+/* Form Resets */
+input,
+label,
+select,
+button,
+textarea
+{
+	margin:0;
+	border:0;
+	padding:0;
+	display:inline-block;
+	vertical-align:middle;
+	white-space:normal;
+	background:none;
+	line-height:1;
+}
+
+input,
+select,
+button,
+textarea {
+    background-color: #F4F4F4;
+    box-shadow: inset 0px -4px 0px var(--orBlack);
+    font-size: 18px;
+    font-family: var(--bodyFontFamily);
+    padding: 10px;
+    width: 400px;
+}
+
+select {
+   border-radius: 0 !important; 
+   --webkit-appearance: none;
+   -webkit-border-radius: 0px !important;
+}
+
+form > *:not(last-child) {
+    margin-bottom: 20px;
+}
+
+input[type="submit"] {
+    background-color:var(--orBlack);
+    box-shadow: none;
+    color: var(--orWhite);
+    font-family: var(--strongFontFamily);
+    font-size: 52px;
+    margin-top: 30px;
+    text-transform: uppercase;
+    padding-top: 0;
+    line-height: 0.75;
+    text-align: left;
+
+    &:hover {
+        cursor: pointer;
+        background: linear-gradient(231deg, #ea3e17, #eaa517, #eadc17, #17ea32, #17b0ea, #8217ea);
+        background-size: 1200% 1200%;
+        animation: gradientCycle 15s ease infinite;
+    }
+}

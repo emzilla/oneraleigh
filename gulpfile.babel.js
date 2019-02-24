@@ -50,6 +50,10 @@ const paths = {
     scripts: {
         src: 'js/*.js',
         dest: 'assets/scripts'
+    },
+    vendorScripts: {
+        src: 'js/vendor/*.js',
+        dest: 'assets/scripts'
     }
 };
 
@@ -62,22 +66,20 @@ const errorHandler = r => {
 
 // Browsersync
 
-// const browsersync = done => {
-//     browserSync.init({
-//         proxy: config.browsersync.projectURL,
-//         open: config.browsersync.browserAutoOpen,
-//         injectChanges: config.browsersync.injectChanges,
-//         watchEvents: ['change', 'add', 'unlink', 'addDir', 'unlinkDir']
-//     });
-//     done();
-// }
+const browsersync = done => {
+    browserSync.init({
+        proxy: 'http://localhost:8888/oneraleigh',
+        watchEvents: ['change', 'add', 'unlink', 'addDir', 'unlinkDir']
+    });
+    done();
+}
 
 // Helper for reloading with Gulp
 
-// const reload = done => {
-//     browserSync.reload();
-//     done();
-// }
+const reload = done => {
+    browserSync.reload();
+    done();
+}
 
 // TASK: Styles
 
@@ -90,8 +92,27 @@ gulp.task('styles', () => {
         .pipe(sourcemaps.write({ includeContent: false }))
 		.pipe(sourcemaps.init({ loadMaps: true }))
         // .pipe(autoprefixer(config.autoprefixer.browserList))
-        .pipe(gulp.dest(paths.styles.dest));
+        .pipe(gulp.dest(paths.styles.dest))
+        .pipe(browserSync.stream());
         // .pipe( notify({ message: '\n\n✅  ===> STYLES — completed!\n', onLast: true }) );
+});
+
+// TASK: Vendors Scripts
+
+gulp.task('vendors scripts', () => {
+    return gulp
+        .src(paths.vendorScripts.src, {allowEmpty: true})
+        .pipe(plumber(errorHandler))
+        .pipe(babel({
+            presets: [
+                ['@babel/preset-env', {targets: {browsers: autoprefixerBrowsers}}]
+            ]
+        }))
+        .pipe(concat('vendors.js'))
+        // .pipe(uglify())
+        .pipe(gulp.dest(paths.vendorScripts.dest))
+        .pipe(browserSync.stream());
+        // .pipe( notify({ message: '\n\n✅  ===> SCRIPTS — completed!\n', onLast: true }) );
 });
 
 // TASK: Scripts
@@ -105,9 +126,10 @@ gulp.task('scripts', () => {
                 ['@babel/preset-env', {targets: {browsers: autoprefixerBrowsers}}]
             ]
         }))
-        .pipe(concat('something.js'))
-        .pipe(uglify())
-        .pipe(gulp.dest(paths.scripts.dest));
+        .pipe(concat('site.js'))
+        // .pipe(uglify())
+        .pipe(gulp.dest(paths.scripts.dest))
+        .pipe(browserSync.stream());
         // .pipe( notify({ message: '\n\n✅  ===> SCRIPTS — completed!\n', onLast: true }) );
 });
 
@@ -115,8 +137,9 @@ gulp.task('scripts', () => {
 // TASK: default
 gulp.task(
     'default',
-    gulp.parallel('styles', 'scripts', () => {
-        gulp.watch(paths.styles.src, gulp.parallel( 'styles' ));
-        gulp.watch(paths.scripts.src, gulp.parallel('scripts'));
+    gulp.parallel('styles', 'vendors scripts', 'scripts', browsersync, () => {
+        gulp.watch(paths.styles.src, gulp.parallel( 'styles', reload ));
+        gulp.watch(paths.vendorScripts.src, gulp.parallel('vendors scripts', reload));
+        gulp.watch(paths.scripts.src, gulp.parallel('scripts', reload));
     })
 );

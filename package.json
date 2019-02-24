@@ -25,6 +25,7 @@
     "rename": "^1.0.4"
   },
   "dependencies": {
+    "gsap": "^2.1.0",
     "postcss-apply": "^0.11.0",
     "postcss-each": "^0.10.0",
     "postcss-for": "^2.1.1",
@@ -35,6 +36,7 @@
     "postcss-utilities": "^0.8.0",
     "prettier": "^1.16.1",
     "requirejs": "^2.3.6",
+    "scrollmagic": "^2.0.6",
     "stylelint": "^9.10.1"
   }
 }
