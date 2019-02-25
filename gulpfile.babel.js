@@ -43,16 +43,16 @@ var postcssPlugins = [imports, autoprefixer({autoprefixerBrowsers}), postcssAppl
 // Paths
 
 const paths = {
+    jquery: {
+        src: 'js/jquery/*.js',
+        dest: 'assets/scripts'
+    },
     styles: {
         src: 'css/**/*.css',
         dest: 'assets/styles'
     },
     scripts: {
-        src: 'js/*.js',
-        dest: 'assets/scripts'
-    },
-    vendorScripts: {
-        src: 'js/vendor/*.js',
+        src: ['js/vendor/**/*', 'js/*.js'],
         dest: 'assets/scripts'
     }
 };
@@ -101,7 +101,7 @@ gulp.task('styles', () => {
 
 gulp.task('scripts', () => {
     return gulp
-        .src([paths.vendorScripts.src, paths.scripts.src], {allowEmpty: true})
+        .src(paths.scripts.src, {allowEmpty: true})
         .pipe(plumber(errorHandler))
         .pipe(babel({
             presets: [
@@ -115,11 +115,29 @@ gulp.task('scripts', () => {
         // .pipe( notify({ message: '\n\n✅  ===> SCRIPTS — completed!\n', onLast: true }) );
 });
 
+// TASK: jQuery
+
+gulp.task('jquery', () => {
+    return gulp
+        .src(paths.jquery.src, {allowEmpty: true})
+        .pipe(plumber(errorHandler))
+        .pipe(babel({
+            presets: [
+                ['@babel/preset-env', {targets: {browsers: autoprefixerBrowsers}}]
+            ]
+        }))
+        .pipe(concat('jquery.js'))
+        .pipe(gulp.dest(paths.jquery.dest))
+        .pipe(browserSync.stream());
+        // .pipe( notify({ message: '\n\n✅  ===> SCRIPTS — completed!\n', onLast: true }) );
+});
+
 
 // TASK: default
 gulp.task(
     'default',
-    gulp.parallel('styles', 'scripts', browsersync, () => {
+    gulp.parallel('styles', 'scripts', 'jquery', browsersync, () => {
+        gulp.watch(paths.jquery.src, gulp.parallel( 'jquery', reload ));
         gulp.watch(paths.styles.src, gulp.parallel( 'styles', reload ));
         gulp.watch(paths.scripts.src, gulp.parallel('scripts', reload));
     })

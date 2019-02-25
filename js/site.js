@@ -1,6 +1,6 @@
 // ScrollMagic Animations 
 
-const controller = new ScrollMagic.Controller();
+const controller = new ScrollMagic.Controller({addIndicators: true});
 
 var scene = new ScrollMagic.Scene({
     triggerElement: "#about"
@@ -9,4 +9,4 @@ var scene = new ScrollMagic.Scene({
 .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
 .addTo(controller);
 
-console.log(controller);
+console.log('hello!');
