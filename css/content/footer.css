@@ -16,19 +16,22 @@
         padding: 60px 0 70px;
     }
 
-    &:before {
-        content: "";
+    p {
+        color: var(--orWhite);
+    }
+}
+
+.footer__line {
+    display: none;
+    
+    @media(--viewport-lg) {
+        display: block;
         position: absolute;
         z-index: 1;
-        background-image: url('../../img/end-line.svg');
         right: 216px;
         top: -150px;
         width: 32px;
         height: 519px;
-    }
-
-    p {
-        color: var(--orWhite);
     }
 }
 

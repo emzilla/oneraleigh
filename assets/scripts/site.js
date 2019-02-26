@@ -5011,19 +5011,63 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
 })();
 // ScrollMagic Animations 
 var controller = new ScrollMagic.Controller({
-  addIndicators: true
+  addIndicators: false
 });
-var scene = new ScrollMagic.Scene({
-  triggerElement: "#about"
-}).setTween("#test-scroll-object", 0.5, {
-  backgroundColor: "green",
-  scale: 2.5
+var introLine = new ScrollMagic.Scene({
+  triggerHook: 0,
+  triggerElement: "#intro",
+  duration: "150%"
+}).setTween("#intro-line", 0.5, {
+  y: '33%',
+  ease: Linear.easeNone
+}, {
+  y: '-33%',
+  ease: Linear.easeNone
 }) // trigger a TweenMax.to neonate
-.addIndicators({
-  name: "1 (duration: 0)"
-}) // add indicators (requires plugin)
+// .addIndicators({name: "intro (duration: 0)"}) // add indicators (requires plugin)
 .addTo(controller);
-console.log('hello!');
+var aboutLine = new ScrollMagic.Scene({
+  triggerHook: 0,
+  triggerElement: "#about",
+  duration: "150%",
+  offset: -400
+}).setTween("#about-line", 0.5, {
+  y: '-33%',
+  ease: Linear.easeNone
+}, {
+  y: '33%',
+  ease: Linear.easeNone
+}) // trigger a TweenMax.to neonate
+// .addIndicators({name: "about (duration: 0)"}) // add indicators (requires plugin)
+.addTo(controller);
+var contactLine = new ScrollMagic.Scene({
+  triggerHook: 0,
+  triggerElement: "#contact",
+  duration: "150%",
+  offset: -600
+}).setTween("#contact-line", 0.5, {
+  y: '33%',
+  ease: Linear.easeNone
+}, {
+  y: '-33%',
+  ease: Linear.easeNone
+}) // trigger a TweenMax.to neonate
+// .addIndicators({name: "contact (duration: 0)"}) // add indicators (requires plugin)
+.addTo(controller);
+var footerLine = new ScrollMagic.Scene({
+  triggerHook: 0,
+  triggerElement: "#end",
+  duration: "150%",
+  offset: -900
+}).setTween("#footer-line", 0.5, {
+  y: '-33%',
+  ease: Linear.easeNone
+}, {
+  y: '33%',
+  ease: Linear.easeNone
+}) // trigger a TweenMax.to neonate
+// .addIndicators({name: "footer (duration: 0)"}) // add indicators (requires plugin)
+.addTo(controller);
 /**
  * File skip-link-focus-fix.js.
  *

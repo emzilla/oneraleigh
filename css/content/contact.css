@@ -19,16 +19,20 @@
     height: 688px;
     padding-left: 75px;
     position: relative;
+}
 
-    &:after {
-        content: "";
+.contact__line {
+    display: none;
+    
+    @media (--viewport-lg) {
+        display: block;
         position: absolute;
         z-index: -1;
-        background-image: url('../../img/contact-line.svg');
         right: -40px;
         top: 30px;
         width: 22px;
         height: 485px;
+
     }
 }
 

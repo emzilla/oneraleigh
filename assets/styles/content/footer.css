@@ -24,20 +24,26 @@
 }
     }
 
-.footer:before {
-        content: "";
-        position: absolute;
-        z-index: 1;
-        background-image: url('../../img/end-line.svg');
-        right: 216px;
-        top: -150px;
-        width: 32px;
-        height: 519px;
-    }
-
 .footer p {
         color: #fff;
         color: var(--orWhite);
+    }
+
+.footer__line {
+    display: none;
+}
+
+@media(min-width: 1201px) {
+
+.footer__line {
+        display: block;
+        position: absolute;
+        z-index: 1;
+        right: 216px;
+        top: -150px;
+        width: 32px;
+        height: 519px
+}
     }
 
 .footer__content {
@@ -48,4 +54,4 @@
     margin-bottom: 420px;
 }
 
-/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbnRlbnQvZm9vdGVyLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTt1QkFDdUI7O0FBRXZCO0lBQ0kseUJBQWdDO0lBQWhDLGdDQUFnQztJQUNoQyxhQUFhO0lBQ2Isa0JBQWtCO0lBQ2xCLGFBQWE7SUFDYixrQkFBa0I7QUF3QnRCOztBQXRCSTs7QUFQSjtRQVFRO0FBcUJSO0lBcEJJOztBQUVBOztBQVhKO1FBWVE7QUFpQlI7SUFoQkk7O0FBRUE7UUFDSSxXQUFXO1FBQ1gsa0JBQWtCO1FBQ2xCLFVBQVU7UUFDViwrQ0FBK0M7UUFDL0MsWUFBWTtRQUNaLFdBQVc7UUFDWCxXQUFXO1FBQ1gsYUFBYTtJQUNqQjs7QUFFQTtRQUNJLFdBQXFCO1FBQXJCLHFCQUFxQjtJQUN6Qjs7QUFHSjtJQUNJLDRDQUFvQztJQUFwQyxvQ0FBb0M7SUFDcEMsZUFBZTtJQUNmLHlCQUF5QjtJQUN6QixvQkFBb0I7QUFDeEIiLCJmaWxlIjoiY29udGVudC9mb290ZXIuY3NzIn0= */
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbnRlbnQvZm9vdGVyLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTt1QkFDdUI7O0FBRXZCO0lBQ0kseUJBQWdDO0lBQWhDLGdDQUFnQztJQUNoQyxhQUFhO0lBQ2Isa0JBQWtCO0lBQ2xCLGFBQWE7SUFDYixrQkFBa0I7QUFhdEI7O0FBWEk7O0FBUEo7UUFRUTtBQVVSO0lBVEk7O0FBRUE7O0FBWEo7UUFZUTtBQU1SO0lBTEk7O0FBRUE7UUFDSSxXQUFxQjtRQUFyQixxQkFBcUI7SUFDekI7O0FBR0o7SUFDSSxhQUFhO0FBV2pCOztBQVRJOztBQUhKO1FBSVEsY0FBYztRQUNkLGtCQUFrQjtRQUNsQixVQUFVO1FBQ1YsWUFBWTtRQUNaLFdBQVc7UUFDWCxXQUFXO1FBQ1g7QUFFUjtJQURJOztBQUdKO0lBQ0ksNENBQW9DO0lBQXBDLG9DQUFvQztJQUNwQyxlQUFlO0lBQ2YseUJBQXlCO0lBQ3pCLG9CQUFvQjtBQUN4QiIsImZpbGUiOiJjb250ZW50L2Zvb3Rlci5jc3MifQ== */

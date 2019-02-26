@@ -12,18 +12,19 @@
     @media (--height-xl) {
         height: 100vh;
     }
+}
 
+.intro__line {
+    display: none;
+    
     @media (--viewport-med) {
-        &:after {
-            content: "";
-            position: absolute;
-            z-index: -1;
-            background-image: url('../../img/intro-line.svg');
-            right: 50px;
-            top: 90px;
-            width: 51px;
-            height: 1114px;
-        }
+        display: block;
+        position: absolute;
+        z-index: -1;
+        right: 50px;
+        top: 90px;
+        width: 51px;
+        height: 1114px;
     }
 }
 

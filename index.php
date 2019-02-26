@@ -29,9 +29,11 @@ get_header();
 						<a href="#about" class="intro__more-link">More</a>
 						<img src="<?php echo get_template_directory_uri(); ?>/img/arrow.svg" alt="More" class="intro__more-arrow">
 					</div>
+					<div id="intro-line" class="intro__line">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/intro-line.svg" alt="Decoration">
+					</div>
 				</header>
 				<section class="about" id="about">
-					<div id="test-scroll-object">MEOW</div>
 					<div class="about__breakout">
 						<h1 class="about__title">Never been slackers always been hungry.</h1>
 					</div>
@@ -52,17 +54,25 @@ get_header();
 						<p>We are the contemptuously impatient for neighborhood spots that are sweet revenge for all the shitty jobs in generic spaces we’ve been stuck in too long.</p>
 						<p><strong>Relax. Get comfortable. It’s gonna get weird, but it’s gonna be okay.</strong></p>
 					</div>
+					<div id="about-line" class="about__line">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/about-line.svg" alt="Decoration">
+					</div>
 				</section>
 				<section class="contact" id="contact">
 					<div class="contact__form">
 						<h1 class="contact__title">New Site Who Dis?</h1>
 						<?php echo do_shortcode('[contact-form-7 id="11" title="Contact form 1"]'); ?>
-					</div>
-					
+						<div id="contact-line" class="contact__line">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/contact-line.svg" alt="Decoration">
+						</div>
+					</div>			
 				</section>
-				<footer class="footer">
+				<footer class="footer" id="end">
 					<p class="footer__content">The End.</p>
 					<p>jk...</p>
+					<div id="footer-line" class="footer__line">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/end-line.svg" alt="Decoration">
+					</div>
 				</footer>
 		</main><!-- #main -->
 		<div class="easter-egg">

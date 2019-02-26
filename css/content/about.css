@@ -22,17 +22,6 @@
         padding: 300px 160px;
         grid-column-gap: 170px;
 
-        &:before {
-            content: "";
-            position: absolute;
-            z-index: -1;
-            background-image: url('../../img/about-line.svg');
-            background-repeat: no-repeat;
-            left: 100px;
-            top: 120px;
-            width: 34px;
-            height: 589px;
-        }
     }
 
     &:after {
@@ -48,6 +37,20 @@
         opacity: 0.3;
     }
     
+}
+
+.about__line {
+    display: none;
+
+    @media (--viewport-lg) {
+        display: block;
+        position: absolute;
+        z-index: -1;
+        left: 100px;
+        top: 120px;
+        width: 34px;
+        height: 589px;
+    }
 }
 
 .about__title {
