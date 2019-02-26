@@ -25,10 +25,10 @@ get_header();
 						<h2 class="intro__title ">Us... in our greatest role</h2>
 						<p class="intro__subtitle">You... drunk on hospitality</p>
 					</div>
-					<div class="intro__more">
-						<a href="#about" class="intro__more-link">More</a>
+					<a href="#about" class="intro__more">
+						<div class="intro__more-link">More</div>
 						<img src="<?php echo get_template_directory_uri(); ?>/img/arrow.svg" alt="More" class="intro__more-arrow">
-					</div>
+					</a>
 					<div id="intro-line" class="intro__line">
 						<img src="<?php echo get_template_directory_uri(); ?>/img/intro-line.svg" alt="Decoration">
 					</div>

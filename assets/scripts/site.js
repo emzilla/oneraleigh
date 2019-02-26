@@ -5068,6 +5068,12 @@ var footerLine = new ScrollMagic.Scene({
 }) // trigger a TweenMax.to neonate
 // .addIndicators({name: "footer (duration: 0)"}) // add indicators (requires plugin)
 .addTo(controller);
+
+(function ($) {
+  $(document).ready(function () {
+    var scroll = new SmoothScroll('a[href*="#"]');
+  });
+})(jQuery);
 /**
  * File skip-link-focus-fix.js.
  *

@@ -93,15 +93,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    color: var(--orBlack);
+    text-decoration: none;
+    text-transform: uppercase;
 
-    a {
-        color: var(--orBlack);
-        text-decoration: none;
-        text-transform: uppercase;
+    &:hover {
+        color: var(--orAccent);
     }
 }
 
 .intro__more-arrow {
     height: 46px;
     width: 22px;
+    margin-left: 20px;
+    animation: bounce 2s infinite;
 }
+

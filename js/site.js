@@ -40,3 +40,10 @@ const footerLine = new ScrollMagic.Scene({
     .setTween("#footer-line", 0.5, { y: '-33%', ease: Linear.easeNone }, { y: '33%', ease: Linear.easeNone }) // trigger a TweenMax.to neonate
     // .addIndicators({name: "footer (duration: 0)"}) // add indicators (requires plugin)
     .addTo(controller);
+
+
+(function($){
+    $(document).ready(function () {
+        var scroll = new SmoothScroll('a[href*="#"]');
+    });
+})(jQuery);
