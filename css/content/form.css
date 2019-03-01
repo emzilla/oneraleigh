@@ -27,13 +27,38 @@ textarea {
     font-size: 18px;
     font-family: var(--bodyFontFamily);
     padding: 10px;
-    width: 400px;
+    width: 100%;
+
+    @media (--viewport-med) {
+        width: 400px;
+    }
+
+    &:focus {
+        outline: none;
+        box-shadow: inset 0px -4px 0px var(--orAccent);
+    }
 }
 
+.user-is-tabbing {
+    input,
+    select,
+    button,
+    textarea {
+        &:focus {
+            box-shadow: inset 0px -6px 0px var(--orAccent);
+        }
+    }
+}
+
+
 select {
-   border-radius: 0 !important; 
-   --webkit-appearance: none;
-   -webkit-border-radius: 0px !important;
+    background-image: url('../../img/select-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: 96% 50%;
+    border-radius: 0 !important; 
+    appearance: none;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px !important;
 }
 
 form > *:not(last-child) {
@@ -49,8 +74,10 @@ input[type="submit"] {
     margin-top: 30px;
     text-transform: uppercase;
     padding-top: 0;
-    line-height: 0.75;
+    line-height: 0.85;
     text-align: left;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px !important;
 
     &:hover {
         cursor: pointer;

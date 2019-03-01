@@ -24,3 +24,7 @@
     --orWhite: #fff;
     --orAccent: #1d94af;
 }
+
+strong {
+    font-family: var(--strongFontFamily);
+}

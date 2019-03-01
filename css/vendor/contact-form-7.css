@@ -6,3 +6,17 @@
         margin-top: 8px;
     }
 }
+
+span.wpcf7-not-valid-tip {
+    margin-top: 8px;
+    font-size: 0.75rem;
+}
+
+input,
+select,
+button,
+textarea {
+    &.wpcf7-not-valid {
+        box-shadow: inset 0px -4px 0px #f00;
+    }
+}

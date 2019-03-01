@@ -2,7 +2,7 @@
 --------------------- */
 
 .contact {
-    padding: 20px;
+    padding: 0 60px 100px;
 
     @media (--viewport-med) {
         padding: 0 150px 150px;
@@ -16,9 +16,11 @@
 
 .contact__form {
     max-width: 480px;
-    height: 688px;
-    padding-left: 75px;
     position: relative;
+    
+    @media (--viewport-med) {
+        padding-left: 75px;
+    }
 }
 
 .contact__line {
@@ -38,7 +40,12 @@
 
 .contact__title {
     font-family: var(--strongFontFamily);
-    font-size: 72px;
+    font-size: 39px;
     text-transform: uppercase;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+
+    @media (--viewport-med) {
+        font-size: 72px;
+        margin-bottom: 40px;
+    }
 }

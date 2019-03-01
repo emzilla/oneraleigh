@@ -15,6 +15,7 @@
     display: flex;
     justify-content: left;
     padding-left: 44px;
+    padding-right: 30px;
     transform: translateX(-85%);
     transition: transform 0.2s ease-out;
 
@@ -70,7 +71,9 @@
     }
 
    a {
+       align-self: center;
        color: var(--orWhite);
+       flex: 1;
        font-family: var(--strongFontFamily);
        font-size: 16px;
        text-decoration: none;

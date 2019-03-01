@@ -4,4 +4,13 @@
 .wpcf7-form-control-wrap input, .wpcf7-form-control-wrap select {
         margin-top: 8px;
     }
-/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInZlbmRvci9jb250YWN0LWZvcm0tNy5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7dUJBQ3VCOztBQUduQjtRQUNJLGVBQWU7SUFDbkIiLCJmaWxlIjoidmVuZG9yL2NvbnRhY3QtZm9ybS03LmNzcyJ9 */
+
+span.wpcf7-not-valid-tip {
+    margin-top: 8px;
+    font-size: 0.75rem;
+}
+
+input.wpcf7-not-valid, select.wpcf7-not-valid, button.wpcf7-not-valid, textarea.wpcf7-not-valid {
+        box-shadow: inset 0px -4px 0px #f00;
+    }
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInZlbmRvci9jb250YWN0LWZvcm0tNy5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7dUJBQ3VCOztBQUduQjtRQUNJLGVBQWU7SUFDbkI7O0FBR0o7SUFDSSxlQUFlO0lBQ2Ysa0JBQWtCO0FBQ3RCOztBQU1JO1FBQ0ksbUNBQW1DO0lBQ3ZDIiwiZmlsZSI6InZlbmRvci9jb250YWN0LWZvcm0tNy5jc3MifQ== */

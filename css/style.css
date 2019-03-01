@@ -1,9 +1,9 @@
 /* General */
 @import "general/reset.css";
+@import "general/typography.css";
 @import "general/settings.css";
 @import "general/animations.css";
 @import "general/base.css";
-@import "general/typography.css";
 
 /* Layout */
 @import "layout/body.css";

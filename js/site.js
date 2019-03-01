@@ -7,7 +7,7 @@ const introLine = new ScrollMagic.Scene({
     triggerElement: "#intro",
     duration: "150%"
     })
-    .setTween("#intro-line", 0.5, { y: '33%', ease: Linear.easeNone }, { y: '-33%', ease: Linear.easeNone }) // trigger a TweenMax.to neonate
+    .setTween("#intro-line", 0.5, { y: '40%', ease: Linear.easeNone }, { y: '-40%', ease: Linear.easeNone }) // trigger a TweenMax.to neonate
     // .addIndicators({name: "intro (duration: 0)"}) // add indicators (requires plugin)
     .addTo(controller);
 
@@ -17,7 +17,7 @@ const aboutLine = new ScrollMagic.Scene({
     duration: "150%",
     offset: -400
     })
-    .setTween("#about-line", 0.5, { y: '-33%', ease: Linear.easeNone }, { y: '33%', ease: Linear.easeNone }) // trigger a TweenMax.to neonate
+    .setTween("#about-line", 0.5, { y: '-60%', ease: Linear.easeNone }, { y: '50%', ease: Linear.easeNone }) // trigger a TweenMax.to neonate
     // .addIndicators({name: "about (duration: 0)"}) // add indicators (requires plugin)
     .addTo(controller);
 
@@ -27,7 +27,7 @@ const contactLine = new ScrollMagic.Scene({
     duration: "150%",
     offset: -600
     })
-    .setTween("#contact-line", 0.5, { y: '33%', ease: Linear.easeNone }, { y: '-33%', ease: Linear.easeNone }) // trigger a TweenMax.to neonate
+    .setTween("#contact-line", 0.5, { y: '40%', ease: Linear.easeNone }, { y: '-40%', ease: Linear.easeNone }) // trigger a TweenMax.to neonate
     // .addIndicators({name: "contact (duration: 0)"}) // add indicators (requires plugin)
     .addTo(controller);
 
@@ -37,13 +37,50 @@ const footerLine = new ScrollMagic.Scene({
     duration: "150%",
     offset: -900
     })
-    .setTween("#footer-line", 0.5, { y: '-33%', ease: Linear.easeNone }, { y: '33%', ease: Linear.easeNone }) // trigger a TweenMax.to neonate
+    .setTween("#footer-line", 0.5, { y: '-60%', ease: Linear.easeNone }, { y: '60%', ease: Linear.easeNone }) // trigger a TweenMax.to neonate
     // .addIndicators({name: "footer (duration: 0)"}) // add indicators (requires plugin)
     .addTo(controller);
 
+const navAnimation = new ScrollMagic.Scene({
+    triggerHook: 0,
+    triggerElement: "#end",
+    duration: 0
+    })
+    .setTween("#site-navigation", 0.1, { autoAlpha: 0}) // trigger a TweenMax.to neonate
+    // .addIndicators({name: "footer (duration: 0)"}) // add indicators (requires plugin)
+    .addTo(controller);    
+
+function handleFirstTab(e) {
+    if (e.keyCode === 9) {
+        document.body.classList.add('user-is-tabbing');
+        
+        window.removeEventListener('keydown', handleFirstTab);
+        window.addEventListener('mousedown', handleMouseDownOnce);
+    }
+}
+    
+function handleMouseDownOnce() {
+    document.body.classList.remove('user-is-tabbing');
+
+    window.removeEventListener('mousedown', handleMouseDownOnce);
+    window.addEventListener('keydown', handleFirstTab);
+}      
 
 (function($){
+
+    // const menuItemToggle = (e) => {
+    //     const isMenuItem = e.target.classList.contains('menu-item');
+    //     if (isMenuItem) {
+    //         console.log('test');
+    //     }
+    // }
+
     $(document).ready(function () {
         var scroll = new SmoothScroll('a[href*="#"]');
     });
+
+    // window.addEventListener('click', menuItemToggle);
+
+    window.addEventListener('click', handleFirstTab);
+    
 })(jQuery);
