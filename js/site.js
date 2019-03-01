@@ -66,21 +66,42 @@ function handleMouseDownOnce() {
     window.addEventListener('keydown', handleFirstTab);
 }      
 
+
+
+
+
+
+
 (function($){
 
-    // const menuItemToggle = (e) => {
-    //     const isMenuItem = e.target.classList.contains('menu-item');
-    //     if (isMenuItem) {
-    //         console.log('test');
-    //     }
-    // }
-
     $(document).ready(function () {
-        var scroll = new SmoothScroll('a[href*="#"]');
-    });
 
-    // window.addEventListener('click', menuItemToggle);
+        var scroll = new SmoothScroll('a[href*="#"]');
+
+        const menuToggle = document.getElementById('menu-toggle');
+        const nav = document.getElementById('site-navigation');
+
+        const toggleMenuItems = e => {
+            e.stopPropagation();
+            console.log('toggleMenuItems');
+            if (nav.classList.contains('open')){
+                nav.classList.remove('open');
+            } else {
+                nav.classList.add('open');
+            }	
+        }
+
+        const closeMenu = e => {
+            console.log('closeMenu');
+            if (nav.classList.contains('open')){
+                nav.classList.remove('open');
+            }
+        }
+        menuToggle.addEventListener('click', toggleMenuItems);
+        window.addEventListener('click', closeMenu);
+    });
 
     window.addEventListener('click', handleFirstTab);
     
+
 })(jQuery);

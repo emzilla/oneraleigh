@@ -8,6 +8,35 @@
     z-index: 2;
 }
 
+.menu-toggle {
+    background: transparent;
+    box-shadow: none; 
+    position: absolute;
+    top: -30px;
+    height: 40px;
+    width: 60px;
+    padding: 0;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.menu-toggle__arrow {  
+    height: 40px;
+    width: 60px;
+    transform: rotate(270deg);
+    transition: transform 0.2s ease-out;
+
+    .open & {
+        transform: rotate(90deg); 
+    }
+}
+
 .menu-item {
     align-items: center;
     background-repeat: no-repeat;
@@ -20,7 +49,10 @@
     transition: transform 0.2s ease-out;
 
     &:hover {
-        cursor: pointer;
+        cursor: pointer; 
+    }
+
+    .open & {
         transform: translateX(-24px);
     }
 

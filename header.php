@@ -45,7 +45,10 @@
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="menu">
-			<button class="menu-toggle screen-reader-text" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'oneraleigh' ); ?></button>
+			<button class="menu-toggle" id="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+				<div class="screen-reader-text"><?php esc_html_e( 'Primary Menu', 'oneraleigh' ); ?></div>
+				<img src="<?php echo get_template_directory_uri(); ?>/img/arrow.svg" alt="More" class="menu-toggle__arrow">
+			</button>
 			<?php
 			wp_nav_menu( array(
 				'theme_location' => 'menu-1',
