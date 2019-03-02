@@ -67,11 +67,6 @@ function handleMouseDownOnce() {
 }      
 
 
-
-
-
-
-
 (function($){
 
     $(document).ready(function () {
@@ -83,7 +78,6 @@ function handleMouseDownOnce() {
 
         const toggleMenuItems = e => {
             e.stopPropagation();
-            console.log('toggleMenuItems');
             if (nav.classList.contains('open')){
                 nav.classList.remove('open');
             } else {
@@ -92,11 +86,11 @@ function handleMouseDownOnce() {
         }
 
         const closeMenu = e => {
-            console.log('closeMenu');
             if (nav.classList.contains('open')){
                 nav.classList.remove('open');
             }
         }
+
         menuToggle.addEventListener('click', toggleMenuItems);
         window.addEventListener('click', closeMenu);
     });

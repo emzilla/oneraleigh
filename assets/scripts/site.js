@@ -5100,7 +5100,6 @@ function handleMouseDownOnce() {
 
     var toggleMenuItems = function toggleMenuItems(e) {
       e.stopPropagation();
-      console.log('toggleMenuItems');
 
       if (nav.classList.contains('open')) {
         nav.classList.remove('open');
@@ -5110,8 +5109,6 @@ function handleMouseDownOnce() {
     };
 
     var closeMenu = function closeMenu(e) {
-      console.log('closeMenu');
-
       if (nav.classList.contains('open')) {
         nav.classList.remove('open');
       }
