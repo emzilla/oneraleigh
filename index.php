@@ -36,6 +36,18 @@ get_header();
 						<img src="<?php echo get_template_directory_uri(); ?>/img/intro-line.svg" alt="Decoration">
 					</div>
 				</header>
+
+				<section class="announcement" id="announcement">
+					<div class="announcement__content">
+						<h2 class="announcement__heading">What's New</h2>
+						<h3 class="announcement__heading">A Special Announcement</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse elementum diam urna, ac venenatis lectus condimentum et. Nullam commodo lorem non scelerisque auctor. Fusce non massa sed nibh hendrerit sagittis. Fusce ante ex, aliquet et pretium quis, ornare a metus. Morbi sollicitudin eros venenatis diam varius condimentum. Nam volutpat ullamcorper ex, ac bibendum tortor rutrum nec.</p>
+						<p>Donec eu sollicitudin dui, ut ullamcorper mi. Nam pulvinar nunc dui. Nam id lectus pharetra dui dictum laoreet. Nunc lectus turpis, dignissim et metus a, scelerisque gravida metus. Phasellus eu sodales magna. Donec fermentum erat tempus, scelerisque justo sed, hendrerit dui. Vivamus rhoncus dolor eu leo ultrices semper. Integer in magna mauris. Morbi sodales lectus a augue tempor, a placerat mauris eleifend.</p>
+						<p>Nam at ligula sit amet nisl porttitor consectetur et eget libero. Phasellus nec quam sit amet elit elementum malesuada. Integer vitae aliquet felis. Donec non mattis tortor. Nam auctor convallis dictum. Proin nibh nisl, ultricies et turpis a, tempus cursus dolor. Praesent risus nunc, euismod eget porta ac, bibendum sed ligula.
+						</p>
+					</div>
+				</section>
+
 				<section class="about" id="about">
 					<div class="about__breakout">
 						<h1 class="about__title">Never been slackers always been hungry.</h1>
