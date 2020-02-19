@@ -15,11 +15,13 @@
     --orBlack: #181717;
     --orGray: #D7D1D1;
     --orWhite: #fff;
-    --orAccent: #1d94af;
+    --orAccent: #FABB13;
+    --orAccent2: #DE4B26;
+    --orAccent3: #ABAAD0;
 }
 
 strong {
     font-family: 'TideSans-700Mondo', sans-serif;
     font-family: var(--strongFontFamily);
 }
-/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImdlbmVyYWwvc2V0dGluZ3MuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO3VCQUN1Qjs7QUFFdkIsa0JBQWtCOztBQVNsQixzQkFBc0I7O0FBRXRCO0lBQ0ksZUFBZTtJQUNmLG1EQUFtRDtJQUNuRCxvREFBb0Q7SUFDcEQsZ0VBQWdFOztJQUVoRSxXQUFXO0lBQ1gsa0JBQWtCO0lBQ2xCLGlCQUFpQjtJQUNqQixlQUFlO0lBQ2YsbUJBQW1CO0FBQ3ZCOztBQUVBO0lBQ0ksNENBQW9DO0lBQXBDLG9DQUFvQztBQUN4QyIsImZpbGUiOiJnZW5lcmFsL3NldHRpbmdzLmNzcyJ9 */
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImdlbmVyYWwvc2V0dGluZ3MuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO3VCQUN1Qjs7QUFFdkIsa0JBQWtCOztBQVNsQixzQkFBc0I7O0FBRXRCO0lBQ0ksZUFBZTtJQUNmLG1EQUFtRDtJQUNuRCxvREFBb0Q7SUFDcEQsZ0VBQWdFOztJQUVoRSxXQUFXO0lBQ1gsa0JBQWtCO0lBQ2xCLGlCQUFpQjtJQUNqQixlQUFlO0lBQ2YsbUJBQW1CO0lBQ25CLG9CQUFvQjtJQUNwQixvQkFBb0I7QUFDeEI7O0FBRUE7SUFDSSw0Q0FBb0M7SUFBcEMsb0NBQW9DO0FBQ3hDIiwiZmlsZSI6ImdlbmVyYWwvc2V0dGluZ3MuY3NzIn0= */

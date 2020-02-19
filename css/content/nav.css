@@ -82,7 +82,7 @@
 
         .open & {
             &:hover {
-                background-image: svg-load('../../img/home-bg.svg', fill: #1d94af);
+                background-image: svg-load('../../img/home-bg.svg', fill: #DE4B26);
             }
         }
     }
@@ -93,7 +93,7 @@
         height: 47px;
         .open & {
             &:hover {
-                background-image: svg-load('../../img/menu-item-bg-1.svg', fill: #1d94af);
+                background-image: svg-load('../../img/menu-item-bg-1.svg', fill: #DE4B26);
             }
         }
     }
@@ -104,7 +104,7 @@
         height: 61px;
         .open & {
             &:hover {
-                background-image: svg-load('../../img/menu-item-bg-2.svg', fill: #1d94af);
+                background-image: svg-load('../../img/menu-item-bg-2.svg', fill: #DE4B26);
             }
         }
     }
@@ -115,7 +115,7 @@
         height: 42px;
         .open & {
             &:hover {
-                background-image: svg-load('../../img/menu-item-bg-3.svg', fill: #1d94af);
+                background-image: svg-load('../../img/menu-item-bg-3.svg', fill: #DE4B26);
             }
         }
     }
@@ -126,7 +126,7 @@
         height: 40px;
         .open & {
             &:hover {
-                background-image: svg-load('../../img/menu-item-bg-4.svg', fill: #1d94af);
+                background-image: svg-load('../../img/menu-item-bg-4.svg', fill: #DE4B26);
             }
         }
     }

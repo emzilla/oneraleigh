@@ -4,11 +4,17 @@
 .intro {
     height: 100%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     position: relative;
     margin-bottom: 100px;
+
+    @media (--viewport-med) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
     @media (--height-xl) {
         height: 100vh;
@@ -30,55 +36,49 @@
     }
 }
 
-.intro__logo {
-    margin-bottom: 2em;
 
+.intro__logo {
+    
     @media (--viewport-med) {
-        margin-bottom: 0;
-        transform: translateX(-50%);
+        width: 49%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
 .intro__content {
-    max-width: 70%;
-    margin: 0 auto 4vh;
-
+    
     @media (--viewport-med) {
-        max-width: 60vw;
-        margin: 3vh 0 5vh auto;
-    }
-
-    @media (--viewport-lg) {
-        padding-right: 10%;
+        width: 49%;
+        display: flex;
+        flex-direction: column;
+        height: 80%;
+        justify-content: flex-end;
     }
 }
 
 .intro__image {
-    width: 250px;
+    min-width: 250px;
+
     @media (--viewport-med) {
-        width: 30vw;    
-    }
-    @media (--viewport-lg) {
-        width: 25vw;    
+     min-width: 60%;  
     }
 }
 
 .intro__title {
     font-family: var(--strongFontFamily);
     font-size: 32px;
-    margin-bottom: 2vh;
     text-align: center;
     text-transform: uppercase;
 
     @media (--viewport-med) {
-        font-size: 62px; 
-        margin-bottom: 0px;
-        text-align: left;
+        font-size: 52px; 
+        text-align: right;
+        margin-right: 100px;
     }
 
-    @media (--viewport-lg) {
-        font-size: 72px; 
-    }
 }
 
 .intro__subtitle {
@@ -88,8 +88,8 @@
 
     @media (--viewport-med) {
         font-size: 24px; 
-        padding-bottom: 0px;
-        text-align: left;
+        text-align: right;
+        margin-right: 100px;
     }
 }
 
@@ -101,6 +101,11 @@
     color: var(--orBlack);
     text-decoration: none;
     text-transform: uppercase;
+
+    @media (--viewport-med) {
+        width: 100%;
+        height: 20%;
+    }
 
     &:hover {
         color: var(--orAccent);
