@@ -11,6 +11,7 @@
 
 /* Content */
 @import "content/about.css";
+@import "content/announcement.css";
 @import "content/contact.css";
 @import "content/easter-egg.css";
 @import "content/footer.css";
