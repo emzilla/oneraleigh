@@ -22,16 +22,12 @@ input,
 select,
 button,
 textarea {
-    background-color: #F4F4F4;
+    background-color: var(--orWhite);
     box-shadow: inset 0px -4px 0px var(--orBlack);
     font-size: 18px;
     font-family: var(--bodyFontFamily);
     padding: 10px;
     width: 100%;
-
-    @media (--viewport-med) {
-        width: 400px;
-    }
 
     &:focus {
         outline: none;
@@ -81,8 +77,8 @@ input[type="submit"] {
 
     &:hover {
         cursor: pointer;
-        background: linear-gradient(231deg, #ea3e17, #eaa517, #eadc17, #17ea32, #17b0ea, #8217ea);
+        background: linear-gradient(231deg, #FABB13, #ABAAD0, #DE4B26, #FABB13, #ABAAD0);
         background-size: 1200% 1200%;
-        animation: gradientCycle 15s ease infinite;
+        animation: gradientCycle 10s ease infinite;
     }
 }

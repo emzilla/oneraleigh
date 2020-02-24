@@ -25,10 +25,12 @@ get_header(); ?>
                             <p class="intro__subtitle"><?php the_field('intro_subtitle'); ?></p>
 						<?php endif; ?>
 					</div>
-					<a href="#about" class="intro__more">
-						<div class="intro__more-link">More</div>
-						<img src="<?php echo get_template_directory_uri(); ?>/img/arrow.svg" alt="More" class="intro__more-arrow">
-					</a>
+					<div class="intro__more">
+						<a href="#about">
+							<div class="intro__more-link">More</div>
+							<img src="<?php echo get_template_directory_uri(); ?>/img/arrow.svg" alt="More" class="intro__more-arrow">
+						</a>
+					</div>
 					<div id="intro-line" class="intro__line">
 						<img src="<?php echo get_template_directory_uri(); ?>/img/intro-line.svg" alt="Decoration">
 					</div>
@@ -78,6 +80,17 @@ get_header(); ?>
 						<div id="contact-line" class="contact__line">
 							<img src="<?php echo get_template_directory_uri(); ?>/img/contact-line.svg" alt="Decoration">
 						</div>
+					</div>
+					<div class="contact__projects">
+						<h1 class="contact__title">Projects</h1>
+							<ul class="contact__project-list">
+								<li><img src="<?php echo get_template_directory_uri(); ?>/img/project-askew-house-logo.png" alt=""></li>
+								<li>
+									<a href="http://jsyachtclub.com" target="_blank">
+										<img src="<?php echo get_template_directory_uri(); ?>/img/project-johnson-street-yacht-club-logo.png" alt="JSYC">
+									</a>
+								</li>
+							</ul>
 					</div>			
 				</section>
 				<footer class="footer" id="end">

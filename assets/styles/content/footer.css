@@ -16,7 +16,7 @@
 }
     }
 
-@media (min-width: 1201px) {
+@media (min-width: 1081px) {
 
 .footer {
         padding: 60px 0 70px
@@ -31,7 +31,7 @@
     display: none;
 }
 
-@media(min-width: 1201px) {
+@media(min-width: 1081px) {
 
 .footer__line {
         display: block;

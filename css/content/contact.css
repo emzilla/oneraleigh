@@ -3,23 +3,46 @@
 
 .contact {
     padding: 0 60px 100px;
-
-    @media (--viewport-med) {
-        padding: 0 150px 150px;
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-template-columns: 600px 1fr;
+    align-items: center;
+    position: relative;
 
     @media (--viewport-lg) {
-        padding: 0 300px 160px;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 150px 150px;
     }
-
 }
 
 .contact__form {
-    max-width: 480px;
     position: relative;
-    
+}
+
+.contact__projects {
+   width: 100%;
+
     @media (--viewport-med) {
-        padding-left: 75px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.contact__project-list {
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+
+    @media (--viewport-lg) {
+        width: 60%;
+    }
+
+    img {
+        max-width: 170px;
     }
 }
 
@@ -30,7 +53,7 @@
         display: block;
         position: absolute;
         z-index: -1;
-        right: -40px;
+        right: -70px;
         top: 30px;
         width: 22px;
         height: 485px;
@@ -40,12 +63,13 @@
 
 .contact__title {
     font-family: var(--strongFontFamily);
-    font-size: 39px;
+    font-size: 32px;
     text-transform: uppercase;
     margin-bottom: 20px;
+    text-align: center;
 
     @media (--viewport-med) {
-        font-size: 72px;
         margin-bottom: 40px;
+        text-align: left;
     }
 }

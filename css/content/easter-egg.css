@@ -13,7 +13,7 @@
     align-items: center;
     justify-content: center;
 
-    background: linear-gradient(231deg, #ea3e17, #eaa517, #eadc17, #17ea32, #17b0ea, #8217ea);
+    background: linear-gradient(231deg, #FABB13, #ABAAD0, #DE4B26, #FABB13, #ABAAD0);
     background-size: 1200% 1200%;
     animation: gradientCycle 15s ease infinite;
 }

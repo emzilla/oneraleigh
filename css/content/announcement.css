@@ -10,7 +10,7 @@
   align-items: center;
   position: relative;
 
-  @media (--viewport-med) {
+  @media (--viewport-lg) {
       flex-direction: row;
       justify-content: space-between;
       padding: 0 150px 150px;
@@ -19,7 +19,7 @@
 }
 
 .announcement__content {
-  @media (--viewport-med) {
+  @media (--viewport-lg) {
       width: 49%;
   }
 }
@@ -30,7 +30,7 @@
   justify-content: center;
   align-items: center;
 
-  @media (--viewport-med) {
+  @media (--viewport-lg) {
       width: 49%;
   }
 }

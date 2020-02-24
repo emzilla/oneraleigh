@@ -1,6 +1,10 @@
 /* Contact Form 7 Overrides
 --------------------- */
 
+.wpcf7 {
+    max-width: 500px;
+}
+
 .wpcf7-form-control-wrap {
     input, select {
         margin-top: 8px;

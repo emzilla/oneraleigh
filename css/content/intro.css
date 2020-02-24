@@ -11,7 +11,7 @@
     position: relative;
     margin-bottom: 100px;
 
-    @media (--viewport-med) {
+    @media (--viewport-lg) {
         flex-direction: row;
         justify-content: space-between;
     }
@@ -39,7 +39,7 @@
 
 .intro__logo {
     
-    @media (--viewport-med) {
+    @media (--viewport-lg) {
         width: 49%;
         height: 80%;
         display: flex;
@@ -50,7 +50,7 @@
 
 .intro__content {
     
-    @media (--viewport-med) {
+    @media (--viewport-lg) {
         width: 49%;
         display: flex;
         flex-direction: column;
@@ -63,6 +63,11 @@
     min-width: 250px;
 
     @media (--viewport-med) {
+        min-width: 400px; 
+    }
+    
+
+    @media (--viewport-lg) {
      min-width: 60%;  
     }
 }
@@ -74,7 +79,7 @@
     text-transform: uppercase;
     margin-bottom: 20px;
 
-    @media (--viewport-med) {
+    @media (--viewport-lg) {
         font-size: 52px; 
         text-align: right;
         margin-right: 100px;
@@ -91,32 +96,34 @@
     text-align: center;
     text-transform: uppercase;
 
-    @media (--viewport-med) {
+    @media (--viewport-lg) {
         font-size: 24px; 
         text-align: right;
-        margin-right: 100px;
-    }
-
-    @media (--viewport-lg) {
         margin-right: 243px;
     }
 }
 
 .intro__more {
-    font-family: var(--strongFontFamily);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--orBlack);
-    text-decoration: none;
-    text-transform: uppercase;
 
     @media (--viewport-med) {
         width: 100%;
         height: 20%;
     }
 
-    &:hover {
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--strongFontFamily);
+        color: var(--orBlack);
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    a:hover {
         color: var(--orAccent);
     }
 }
