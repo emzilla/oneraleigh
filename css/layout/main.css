@@ -11,3 +11,25 @@
         margin-bottom: 450px;  
     }
 }
+
+.content-wrapper {
+    padding: 0 60px 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    @media (--viewport-lg) {
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 1000px;
+        padding: 100px 60px 200px;
+    }
+
+    @media (--viewport-xl) {
+        max-width: 1240px;
+        padding: 100px 0px 200px;
+    }
+}

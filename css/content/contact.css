@@ -1,19 +1,14 @@
 /* Contact 
 --------------------- */
 
-.contact {
-    padding: 0 60px 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    grid-template-columns: 600px 1fr;
+.contact .content-wrapper {
+    grid-template-columns: 1fr 2fr;
     align-items: center;
     position: relative;
 
     @media (--viewport-lg) {
         flex-direction: row;
         justify-content: space-between;
-        padding: 0 150px 150px;
     }
 }
 
@@ -30,19 +25,32 @@
         justify-content: center;
         align-items: center;
     }
+
+    @media (--viewport-lg) {
+        padding-left: 90px;
+    }
+
+
 }
 
 .contact__project-list {
     display: flex;
-    width: 80%;
-    justify-content: space-around;
-
-    @media (--viewport-lg) {
-        width: 60%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    
+    @media (--viewport-med) {
+        flex-direction: row;
+        justify-content: space-around;
     }
 
     img {
-        max-width: 170px;
+        max-width: 100px;
+
+        @media (--viewport-med) {
+            max-width: 170px;
+        }
     }
 }
 

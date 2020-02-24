@@ -2,22 +2,6 @@
 --------------------- */
 
 
-.announcement {
-  padding: 0 60px 100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-
-  @media (--viewport-lg) {
-      flex-direction: row;
-      justify-content: space-between;
-      padding: 0 150px 150px;
-      margin-top: 300px;
-  }
-}
-
 .announcement__content {
   @media (--viewport-lg) {
       width: 49%;
