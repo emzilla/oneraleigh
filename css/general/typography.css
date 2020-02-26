@@ -31,3 +31,7 @@
         url('../../fonts/38BEBB_3_0.ttf') format('truetype'),
         url('../../fonts/38BEBB_3_0.eot?#iefix') format('embedded-opentype');
 }
+
+h1, h2, h3, h5, h6 {
+    letter-spacing: 0.025rem;
+}

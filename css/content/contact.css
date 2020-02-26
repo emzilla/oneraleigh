@@ -1,10 +1,16 @@
 /* Contact 
 --------------------- */
 
+.contact {
+    position: relative;
+    overflow: hidden;    
+}
+
 .contact .content-wrapper {
     grid-template-columns: 1fr 2fr;
     align-items: center;
     position: relative;
+    overflow: hidden;
 
     @media (--viewport-lg) {
         flex-direction: row;
@@ -62,9 +68,9 @@
         position: absolute;
         z-index: -1;
         right: -70px;
-        top: 30px;
-        width: 22px;
-        height: 485px;
+        top: -160px;
+        width: 26px;
+        height: 780px;
 
     }
 }
@@ -79,5 +85,21 @@
     @media (--viewport-med) {
         margin-bottom: 40px;
         text-align: left;
+    }
+}
+
+
+.projects__line {
+    display: none;
+    
+    @media (--viewport-lg) {
+        display: block;
+        position: absolute;
+        z-index: -1;
+        right: -170px;
+        bottom: 220px;
+        width: 524px;
+        height: 36px;
+
     }
 }

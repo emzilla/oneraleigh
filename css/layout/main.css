@@ -30,6 +30,6 @@
 
     @media (--viewport-xl) {
         max-width: 1240px;
-        padding: 100px 0px 200px;
+        padding: 150px 0px 150px;
     }
 }

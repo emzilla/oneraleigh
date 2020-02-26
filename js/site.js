@@ -11,6 +11,24 @@ const introLine = new ScrollMagic.Scene({
     // .addIndicators({name: "intro (duration: 0)"}) // add indicators (requires plugin)
     .addTo(controller);
 
+const announcementLineTop = new ScrollMagic.Scene({
+    triggerHook: 0,
+    triggerElement: "#intro",
+    duration: "150%"
+    })
+    .setTween("#announcement-line-top", 0.5, { x: '20%', ease: Linear.easeNone }, { x: '-20%', ease: Linear.easeNone }) // trigger a TweenMax.to neonate
+    // .addIndicators({name: "intro (duration: 0)"}) // add indicators (requires plugin)
+    .addTo(controller);   
+    
+const announcementLineBottom = new ScrollMagic.Scene({
+    triggerHook: 0,
+    triggerElement: "#announcement",
+    duration: "150%"
+    })
+    .setTween("#announcement-line-bottom", 0.5, { x: '-20%', ease: Linear.easeNone }, { x: '20%', ease: Linear.easeNone }) // trigger a TweenMax.to neonate
+    // .addIndicators({name: "intro (duration: 0)"}) // add indicators (requires plugin)
+    .addTo(controller);       
+
 const aboutLine = new ScrollMagic.Scene({
     triggerHook: 0,
     triggerElement: "#about",
@@ -31,14 +49,14 @@ const contactLine = new ScrollMagic.Scene({
     // .addIndicators({name: "contact (duration: 0)"}) // add indicators (requires plugin)
     .addTo(controller);
 
-const footerLine = new ScrollMagic.Scene({
+const projectsLine = new ScrollMagic.Scene({
     triggerHook: 0,
-    triggerElement: "#end",
+    triggerElement: "#contact",
     duration: "150%",
-    offset: -900
+    offset: -600
     })
-    .setTween("#footer-line", 0.5, { y: '-60%', ease: Linear.easeNone }, { y: '60%', ease: Linear.easeNone }) // trigger a TweenMax.to neonate
-    // .addIndicators({name: "footer (duration: 0)"}) // add indicators (requires plugin)
+    .setTween("#projects-line", 0.5, { x: '-20%', ease: Linear.easeNone }, { x: '20%', ease: Linear.easeNone }) // trigger a TweenMax.to neonate
+    // .addIndicators({name: "contact (duration: 0)"}) // add indicators (requires plugin)
     .addTo(controller);
 
 const navAnimation = new ScrollMagic.Scene({
