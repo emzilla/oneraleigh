@@ -46,14 +46,14 @@
     text-transform: uppercase;
     word-wrap: break-word;
 
-    @media (--viewport-med) {
+    @media (--viewport-lg) {
         font-size: 79px;
     }
 }
 
 .about__breakout {
     @media (--viewport-lg) {
-        width: 33%;
+        width: 50%;
     }
 }
 
@@ -61,7 +61,7 @@
     font-size: 18px;
 
     @media (--viewport-lg) {
-        width: 66%;
+        width: 49%;
         padding-left: 50px;
     }
 

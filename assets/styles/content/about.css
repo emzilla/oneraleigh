@@ -55,7 +55,7 @@
     word-wrap: break-word;
 }
 
-@media (min-width: 801px) {
+@media (min-width: 1081px) {
 
 .about__title {
         font-size: 79px
@@ -65,7 +65,7 @@
 @media (min-width: 1081px) {
 
 .about__breakout {
-        width: 33%
+        width: 50%
 }
     }
 
@@ -76,7 +76,7 @@
 @media (min-width: 1081px) {
 
 .about__content {
-        width: 66%;
+        width: 49%;
         padding-left: 50px
 }
     }

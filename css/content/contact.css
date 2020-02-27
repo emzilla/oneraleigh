@@ -12,7 +12,7 @@
     position: relative;
     overflow: hidden;
 
-    @media (--viewport-lg) {
+    @media (--viewport-med) {
         flex-direction: row;
         justify-content: space-between;
     }
@@ -24,6 +24,7 @@
 
 .contact__projects {
    width: 100%;
+   padding-top: 100px;
 
     @media (--viewport-med) {
         display: flex;
@@ -34,6 +35,7 @@
 
     @media (--viewport-lg) {
         padding-left: 90px;
+        padding-top: 0;
     }
 
 
@@ -48,11 +50,11 @@
     
     @media (--viewport-med) {
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-evenly;
     }
 
     img {
-        max-width: 100px;
+        max-width: 140px;
 
         @media (--viewport-med) {
             max-width: 170px;
@@ -68,7 +70,7 @@
         position: absolute;
         z-index: -1;
         right: -70px;
-        top: -160px;
+        top: 0;
         width: 26px;
         height: 780px;
 

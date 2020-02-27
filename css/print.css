@@ -1,0 +1,61 @@
+/* Print Stylesheet
+--------------------- */
+
+@media print {
+  nav, footer {
+    display: none;
+  }
+
+  h1 {
+    font-size: 22px !important;
+    margin: 20px 0 !important;
+  }
+
+  h2 {
+    font-size: 20px !important;
+    margin: 20px 0 !important;
+  }
+
+  h3, h4, h5 {
+    font-size: 18px !important;
+    margin: 12px 0 !important;
+  }
+
+  p {
+    font-size: 12px !important;
+    margin: 12px 0 !important;
+  }
+
+  .content-wrapper {
+    padding: 20px 0;
+  }
+
+  .intro__logo {
+    width: 100% !important;
+    height: unset !important;
+    justify-content: center !important;
+  }
+
+  .intro__image {
+    width: 50px !important;
+  }
+
+  .intro__content,
+  .intro__more,
+  .intro__line {
+    display: none;
+  }
+
+  .announcement__content {
+    column-count: 1;
+  }
+
+  .announcement__content figure {
+    max-width: 50%;
+    float: left;
+  }
+
+  #contact, .easter-egg {
+    display: none;
+  }
+}

@@ -13,7 +13,7 @@
 }
 
 .content-wrapper {
-    padding: 0 60px 140px;
+    padding: 80px 40px 0 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;

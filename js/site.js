@@ -35,17 +35,16 @@ const aboutLine = new ScrollMagic.Scene({
     duration: "150%",
     offset: -400
     })
-    .setTween("#about-line", 0.5, { y: '-60%', ease: Linear.easeNone }, { y: '50%', ease: Linear.easeNone }) // trigger a TweenMax.to neonate
+    .setTween("#about-line", 0.5, { y: '60%', ease: Linear.easeNone }, { y: '-50%', ease: Linear.easeNone }) // trigger a TweenMax.to neonate
     // .addIndicators({name: "about (duration: 0)"}) // add indicators (requires plugin)
     .addTo(controller);
 
 const contactLine = new ScrollMagic.Scene({
     triggerHook: 0,
-    triggerElement: "#contact",
-    duration: "150%",
-    offset: -600
+    triggerElement: "#about",
+    duration: "150%"
     })
-    .setTween("#contact-line", 0.5, { y: '40%', ease: Linear.easeNone }, { y: '-40%', ease: Linear.easeNone }) // trigger a TweenMax.to neonate
+    .setTween("#contact-line", 0.5, { y: '-40%', ease: Linear.easeNone }, { y: '40%', ease: Linear.easeNone }) // trigger a TweenMax.to neonate
     // .addIndicators({name: "contact (duration: 0)"}) // add indicators (requires plugin)
     .addTo(controller);
 

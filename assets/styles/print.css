@@ -1,0 +1,65 @@
+/* Print Stylesheet
+--------------------- */
+
+@media print {
+  nav, footer {
+    display: none;
+  }
+
+  h1 {
+    font-size: 22px !important;
+    margin: 20px 0 !important;
+  }
+
+  h2 {
+    font-size: 20px !important;
+    margin: 20px 0 !important;
+  }
+
+  h3, h4, h5 {
+    font-size: 18px !important;
+    margin: 12px 0 !important;
+  }
+
+  p {
+    font-size: 12px !important;
+    margin: 12px 0 !important;
+  }
+
+  .content-wrapper {
+    padding: 20px 0;
+  }
+
+  .intro__logo {
+    width: 100% !important;
+    height: unset !important;
+    justify-content: center !important;
+  }
+
+  .intro__image {
+    width: 50px !important;
+  }
+
+  .intro__content,
+  .intro__more,
+  .intro__line {
+    display: none;
+  }
+
+  .announcement__content {
+    -webkit-column-count: 1;
+       -moz-column-count: 1;
+            column-count: 1;
+  }
+
+  .announcement__content figure {
+    max-width: 50%;
+    float: left;
+  }
+
+  #contact, .easter-egg {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInByaW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTt1QkFDdUI7O0FBRXZCO0VBQ0U7SUFDRSxhQUFhO0VBQ2Y7O0VBRUE7SUFDRSwwQkFBMEI7SUFDMUIseUJBQXlCO0VBQzNCOztFQUVBO0lBQ0UsMEJBQTBCO0lBQzFCLHlCQUF5QjtFQUMzQjs7RUFFQTtJQUNFLDBCQUEwQjtJQUMxQix5QkFBeUI7RUFDM0I7O0VBRUE7SUFDRSwwQkFBMEI7SUFDMUIseUJBQXlCO0VBQzNCOztFQUVBO0lBQ0UsZUFBZTtFQUNqQjs7RUFFQTtJQUNFLHNCQUFzQjtJQUN0Qix3QkFBd0I7SUFDeEIsa0NBQWtDO0VBQ3BDOztFQUVBO0lBQ0Usc0JBQXNCO0VBQ3hCOztFQUVBOzs7SUFHRSxhQUFhO0VBQ2Y7O0VBRUE7SUFDRSx1QkFBZTtPQUFmLG9CQUFlO1lBQWYsZUFBZTtFQUNqQjs7RUFFQTtJQUNFLGNBQWM7SUFDZCxXQUFXO0VBQ2I7O0VBRUE7SUFDRSxhQUFhO0VBQ2Y7QUFDRiIsImZpbGUiOiJwcmludC5jc3MifQ== */
