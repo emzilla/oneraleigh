@@ -27,7 +27,7 @@ get_header(); ?>
 							<?php endif; ?>
 						</div>
 						<div class="intro__more">
-							<a href="#announcement">
+							<a data-scroll href="#announcement">
 								<div class="intro__more-link">More</div>
 								<img src="<?php echo get_template_directory_uri(); ?>/img/arrow.svg" alt="More" class="intro__more-arrow">
 							</a>

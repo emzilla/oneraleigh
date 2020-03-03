@@ -88,7 +88,11 @@ function handleMouseDownOnce() {
 
     $(document).ready(function () {
 
-        var scroll = new SmoothScroll('a[href*="#"]');
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 300
+        });
+
+        console.log(scroll);
 
         const menuToggle = document.getElementById('menu-toggle');
         const nav = document.getElementById('site-navigation');

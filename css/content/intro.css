@@ -48,7 +48,7 @@
 .intro__logo {
     
     @media (--viewport-lg) {
-        width: 33%;
+        width: 38%;
         height: 80%;
         display: flex;
         justify-content: left;
@@ -59,7 +59,7 @@
 .intro__content {
     
     @media (--viewport-lg) {
-        width: 66%;
+        width: 61%;
         display: flex;
         flex-direction: column;
         height: 80%;
