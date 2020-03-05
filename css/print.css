@@ -24,10 +24,21 @@
   p {
     font-size: 12px !important;
     margin: 12px 0 !important;
+    letter-spacing: unset;
+  }
+
+  .site-main {
+    background: transparent;
   }
 
   .content-wrapper {
     padding: 20px 0;
+    max-width: 70%;
+    margin: 0 auto;
+  }
+
+  .intro {
+    height: 100% !important;
   }
 
   .intro__logo {
@@ -37,7 +48,7 @@
   }
 
   .intro__image {
-    width: 50px !important;
+    min-width: 120px !important;  
   }
 
   .intro__content,
@@ -51,8 +62,9 @@
   }
 
   .announcement__content figure {
-    max-width: 50%;
+    max-width: 45%;
     float: left;
+    margin: 20px 40px 20px 0;
   }
 
   #contact, .easter-egg {

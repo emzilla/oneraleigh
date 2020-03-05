@@ -57,7 +57,8 @@
 }
 
 .intro__content {
-    
+    width: 75%;
+
     @media (--viewport-lg) {
         width: 61%;
         display: flex;
@@ -81,10 +82,15 @@
 
 .intro__title {
     font-family: var(--strongFontFamily);
-    font-size: 32px;
+    font-size: 28px;
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 20px;
+    line-height: 1.2;
+
+    @media (--viewport-med) {
+        font-size: 32px;
+    }
 
     @media (--viewport-lg) {
         font-size: 52px; 
@@ -92,7 +98,7 @@
         margin-right: 100px;
     }
 
-    @media (--viewport-lg) {
+    @media (--viewport-xl) {
         margin-right: 143px;
     }
 

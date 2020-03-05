@@ -13,12 +13,16 @@
 }
 
 .content-wrapper {
-    padding: 80px 40px 0 60px;
+    padding: 60px 40px 0 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
+
+    @media (--viewport-med) {
+        padding: 100px 60px 100px;
+    }
 
     @media (--viewport-lg) {
         flex-direction: row;

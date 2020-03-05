@@ -28,14 +28,21 @@
 .announcement__columns {
   @media (--viewport-med) {
     column-count: 2;
-    column-gap: 90px;
+    column-gap: 32px;
 
     > * {
       -webkit-column-break-inside: avoid;
             page-break-inside: avoid;
                   break-inside: avoid;
     }
+  }
 
+  @media (--viewport-lg) {
+    column-gap: 50px;
+  }
+
+  @media (--viewport-xl) {
+    column-gap: 90px;
   }
 }
 
@@ -44,6 +51,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 40px;
 }
 
 .announcement__image {
@@ -65,12 +73,10 @@
 .announcement__subtitle {
   font-family: var(--strongFontFamily);
   font-size: 18px;
-  text-transform: uppercase;
-  margin: 20px 0 12px;
+  margin: 20px 0;
 
   @media (--viewport-lg) {
-    font-size: 20px;
-    margin: 40px 0 20px;
+    margin: 40px 0;
   }
 }
 

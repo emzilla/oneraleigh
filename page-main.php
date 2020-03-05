@@ -41,7 +41,8 @@ get_header(); ?>
 					<div class="content-wrapper">
 						<div class="announcement__content">
 							<h2 class="announcement__title">What's New</h2>
-							<h3 class="announcement__subtitle">Don’t Freak Out—Fiction Kitchen Isn’t Closing</h3>
+							<h3 class="announcement__subtitle">Askew House, Raleigh’s new vegetarian restaurant will feature Fiction Kitchen Chef Caroline Morrison and Bittersweet’s Kim Hammer...<br><br>
+							...but don’t freak out—Fiction Kitchen and Bittersweet aren’t going anywhere</h3>
 							<div id="announcement-line-top" class="announcement__line-top">
 								<img src="<?php echo get_template_directory_uri(); ?>/img/announcement-line-top.svg" alt="Decoration">
 							</div>
@@ -50,23 +51,29 @@ get_header(); ?>
 									<img src="<?php echo get_template_directory_uri(); ?>/img/kim-hammer-caroline-morrison-askew-house.png" alt="Kim Hammer and Caroline Morrison pictured in Askew House building" class="announcement__image">
 									<figcaption class="visuallyhidden">Kim Hammer and Caroline Morrison</figcaption>
 								</figure>
-								<h3 class="announcement__subtitle">What’s going on?</h3>						
-								<p>Caroline Morrison (Fiction Kitchen) is taking her delicious talent upscale with Askew House, a new vegetarian fine dining restaurant for downtown Raleigh. Kim Hammer (Bittersweet) is jumping in for dessert consult and creative direction.</p>
-								<h3 class="announcement__subtitle">Wait, I know Fiction Kitchen isn’t closing, what about Bittersweet?</h3>
-								<p>Nope, Bittersweet stays too. Kim is lending dessert, menu and interior assistance—working as Creative Director of OneRaleigh, the hospitality group opening this new joint.</p>
-								<h3 class="announcement__subtitle">Okay, so what is it?</h3>
-								<p>Askew House is a celebration of vegetarian cuisine in an historic downtown Raleigh house. Expect fancy plating, exceptional and rare produce, a vegan cocktail menu and LOTS of wine.</p>
-								<p>Askew House will be a showcase of Chef Morrison’s talent and the natural growth of her skills and cuisine into the realm of fine dining. She has most recently drawn the attention of the James Beard Foundation and will be a featured chef at the James Beard House for New Voices: A Southern Supper progressive dinner on March 10, 2020.</p>
-								<h3 class="announcement__subtitle">Vegan or Vegetarian?</h3>
-								<p>This will be a 100% vegetarian kitchen with many vegan offerings including house-made vegan cheese and several vegan desserts.</p>	
-								<h3 class="announcement__subtitle">How? Wait? Where did this idea come from? </h3>
-								<p>Kim and Caroline have been talking for some time about wanting to work with more small, local growers to bring their produce into downtown Raleigh. Askew House will finally give these two a platform to get more local dollars to farmers using environmentally sound and sustainable farming practices. This influx of more delicious local fruits and veggies will give guests fresher, just-off-the-farm produce—at a level of quality and variety that allows Caroline to show off her talent and exquisite palate. Expect more of the fresh produce-based cocktails found already at Bittersweet and Fiction Kitchen as well as time-intensive dishes like fresh house-made pasta and slow simmered soups.</p>
-								
-								<h3 class="announcement__subtitle">So where and when?</h3>
-								<p>Askew House (pronounced ASS-CUE...heh) is located at 110 Glenwood Ave. in the old Askew Taylor Paint shop. Just ask any NCSU Design School Grad to point it out to you. You can’t buy by paint there anymore, but we’d like to think there will still be some serious art coming out of this house. Askew House is slated to open summer 2020 and will provide two floors of dining with a variety of spaces available for rental—from small parties (under 20) to larger needs such as wedding receptions.</p>
-
-								<h3 class="announcement__subtitle">Want to get involved?</h3>
-								<p>Askew House will be looking for front and back of house service employees real soon. We are in need of all types of service industry people—including management, pastry chefs and front of house folks with experience in fine dining and wine. Please send resumes to: <a href="mailto:apply@oneraleigh.co">apply@oneraleigh.co</a></p>
+									<p><strong>What’s going on?</strong></p>
+									<p> Caroline Morrison of Fiction Kitchen and Kim Hammer of Bittersweet are joining forces to introduce a gourmet, plant-based dining experience. <strong>Askew House</strong> will be their first joint venture.</p>
+									<br>					
+									<p>Kim Hammer will be acting as Askew House’s dessert consultant and creative director. Hammer will continue to operate Bittersweet while also working as Creative Director of <strong>One Raleigh</strong>, the downtown hospitality group responsible for Johnson Street Yacht Club and now, Askew House. Additional creative projects will be coming soon to downtown Raleigh.</p>
+									<br>
+									<p><strong>Okay, so what is it?</strong></p>
+									<p>Diners can expect a memorable experience with two floors of elegant and comfortable seating, refined and colorful plating, exceptional and rare local produce, house-made non-dairy cheeses, a vegan cocktail menu, carefully selected natural and biodynamic wines, and mouthwatering desserts.</p>
+									<br>
+									<p><strong>Askew House</strong> will allow Chef Caroline to further explore the realm of vegetarian and vegan fine dining, while she continues to cultivate Fiction Kitchen’s plant-based menu. She has most recently drawn the attention of the James Beard Foundation, having been named a 2019 fellow in its Women’s Entrepreneurial Leadership program. She will also be a featured chef at the James Beard House in New York City for <strong>New Voices: A Southern Supper</strong> progressive dinner on March 10, 2020.</p> 
+									<br>
+									<p><strong>Vegan or Vegetarian?</strong></p>
+									<p>This will be a 100% vegetarian kitchen with considerable vegan offerings, including house-made vegan cheeses and several vegan desserts.</p> 
+									<br>
+									<blockquote class="blockquote"><p>“Kim and I have been talking for some time about wanting to work with more small, local growers to bring their produce to downtown Raleigh. Askew House will give us a platform to get more local dollars to farmers using environmentally sound and sustainable farming practices.”</p><footer class="blockquote__footer"><p>—Caroline Morrision<p></footer></blockquote> 
+									<br>
+									<blockquote class="blockquote"><p>“I have long admired Caroline’s talent and exquisite palate. Askew House is an opportunity to give guests fresher, just-off-the-farm fruits and vegetables at a level of quality and variety not common to the area. Guests should also expect more of the fresh produce-based cocktails found already at Bittersweet and Fiction Kitchen, as well as time intensive dishes like fresh house-made pasta and slow simmered soups.”</p><footer class="blockquote__footer"><p>—Kim Hammer</p></footer></blockquote> 
+									<br>
+									<p><strong>So where and when?</strong></p>
+									<p><strong>Askew House</strong> is located at 110 Glenwood Ave., a house formerly best known to N.C. State Design School students and art lovers as Askew-Taylor Paints. It was founded by John Askew in 1946 and operated as a paint, wallpaper and art supply shop until it closed in 2016. We’d like to think there will still be serious art of coming out of this house, only this time it will be edible.</p>
+									<br>
+									<p>Askew House is slated to open summer 2020 and will provide two floors of dining with a variety of spaces available for rental—from small parties (under 20) to larger needs such as wedding receptions and private celebrations.</p>
+									<br>
+									<p>Hiring is under way for front and back of house teams, including management, pastry chefs and front of house with experience in fine dining and wine. Please send resumes to: <a href="mailto:apply@oneraleigh.co">apply@oneraleigh.co</a>
 
 							</div>
 

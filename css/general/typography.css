@@ -33,15 +33,20 @@
 }
 
 h1, h2, h3, h5, h6 {
-    letter-spacing: 0.025rem;
+    letter-spacing: 0.05rem;
 }
+
 p {
-    font-size: 14px;
-    line-height: 1.3rem;
+    font-size: 15px;
+    letter-spacing: 0.025rem;
+    line-height: 1.6;
 
     @media (--viewport-med) {
         font-size: 16px;
-        line-height: 1.45rem;
+    }
+
+    strong {
+        letter-spacing: 0.035rem;
     }
 }
 
@@ -61,4 +66,17 @@ p a {
   &:hover {
     background-size: 4px 50px; 
  }
+}
+
+.blockquote {
+    font-style: italic;
+    margin-left: 20px;
+
+    @media (--viewport-med) {
+        margin-left: 32px;
+    }
+
+    .blockquote__footer {
+      text-align: right;
+    }
 }
